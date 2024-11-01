@@ -37,4 +37,14 @@ Performance Metrics for Virtualized Environments.
 
 3.Infrastructure as Code (IaC)
 
-How does the adoption of Infrastructure as Code (IaC) tools like Terraform impact the provisioning and management of virtual machines?
+..How does the adoption of Infrastructure as Code (IaC) tools like Terraform impact the provisioning and management of virtual machines?
+It enables the consistent, repeatable, and auditable management of infrastructure, making it easier to maintain complex environments. By using Terraform, teams can automate the provisioning of infrastructure, reduce the risk of human error, and improve the efficiency of their DevOps processes.
+
+What challenges and benefits arise from using IaC for VM deployments in a DevOps pipeline?
+..Immutable infrastructure. As all the environments are provisioned using automated manifests and CI/CD pipelines, there is no room for human error, This ensures system uniformity throughout the whole delivery process and removes the risk of configuration drift — a situation where different servers develop different configurations and software versions due to manual updates performed at various occasions over time.
+..Deployment speed. DevOps tools working with virtualized infrastructure provide immense increase in environment provisioning and configuration speed. We are not talking about 30% here, we are talking about shortening the server delivery time from hours to seconds…
+..Change management. Due to versioning the manifests and using identical environments throughout the whole software development process, it is easy to configure exactly the needed environment. This is crucial in speeding up bug fixing, which helps ensure quality and security of the resulting code.
+..High scalability. When using Terraform and Kubernetes manifests and working with virtualized cloud resources, additional app instances can be provisioned with ease and in literally no time. They can also be freed up as soon as they are not needed, ensuring unparalleled cost-efficiency.
+..Shorter feedback loops. Due to being able to deploy infrastructure rapidly, your developers will be able to develop new features more quickly in response to customer feedback.
+
+
